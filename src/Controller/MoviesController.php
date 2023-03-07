@@ -9,15 +9,15 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class MoviesController extends AbstractController
-{   
+{
     //constructor injection
     //private $em;
     //public function __construct(EntityManagerInterface $em)
     //{
-        //$this->em = $em;
+    //$this->em = $em;
     //}
 
-    #[Route('/movies', name: 'movies')]
+    #[Route("/movies", name: "movies")]
     public function index(): Response
     {
         // findAll() movies = SELECT * FROM movie
@@ -31,6 +31,6 @@ class MoviesController extends AbstractController
 
         //dd($movies);
 
-        return $this->render('movies/index.html.twig');
-    }    
+        return $this->render("movies/index.html.twig");
+    }
 }

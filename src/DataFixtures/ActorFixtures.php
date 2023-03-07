@@ -11,16 +11,16 @@ class ActorFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $actor = new Actor();
-        $actor->setName('Keanu Reeves');
+        $actor->setName("Keanu Reeves");
         $manager->persist($actor);
 
         $actor1 = new Actor();
-        $actor1->setName('Laurence Fishburne');
+        $actor1->setName("Laurence Fishburne");
         $manager->persist($actor1);
 
         $manager->flush();
 
-        $this -> addReference('actor', $actor);
-        $this -> addReference('actor1', $actor1);
+        $this->addReference("actor", $actor);
+        $this->addReference("actor1", $actor1);
     }
 }
