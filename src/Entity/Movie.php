@@ -18,6 +18,7 @@ class Movie
 
     #[ORM\Column(length: 255)]
     #[Assert\NotBlank]
+    #[Assert\Length(min: 3, max: 255)]
     private ?string $title = null;
 
     #[ORM\Column]
