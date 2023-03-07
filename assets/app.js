@@ -9,7 +9,7 @@
 import './styles/app.css';
 
 //Compile new js files
-import './javascript/m1.js';
+import './js/m1.js';
 
 // start the Stimulus application
 import './bootstrap';
