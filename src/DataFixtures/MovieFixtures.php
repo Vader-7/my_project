@@ -30,7 +30,7 @@ class MovieFixtures extends Fixture
             "Neo and the rebel leaders estimate that they have 72 hours until 250,000 probes discover Zion and destroy it and its inhabitants. During this, Neo must decide how he can save Trinity from a dark fate in his dreams."
         );
         $movie1->setImagePath(
-            "https://cdn.pixabay.com/photo/2015/11/28/10/52/binary-1066983__480.jpg"
+            "https://images.unsplash.com/photo-1640388397643-cd924ab7ef1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2797&q=80"
         );
         $movie1->addActor($this->getReference("actor"));
         $movie1->addActor($this->getReference("actor1"));
