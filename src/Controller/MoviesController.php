@@ -11,11 +11,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class MoviesController extends AbstractController
 {   
     //constructor injection
-    private $em;
-    public function __construct(EntityManagerInterface $em)
-    {
-        $this->em = $em;
-    }
+    //private $em;
+    //public function __construct(EntityManagerInterface $em)
+    //{
+        //$this->em = $em;
+    //}
 
     #[Route('/movies', name: 'movies')]
     public function index(): Response
@@ -26,10 +26,10 @@ class MoviesController extends AbstractController
         // findOneBy() movies = SELECT * FROM movie WHERE title = 'The Matrix' LIMIT 1
         // count movies = SELECT COUNT(*) FROM movie WHERE id = 5
         // getClassNames() = Shows the Entity class names
-        $repository = $this->em->getRepository(Movie::class);
-        $movies = $repository->findAll();
+        //$repository = $this->em->getRepository(Movie::class);
+        //$movies = $repository->findAll();
 
-        dd($movies);
+        //dd($movies);
 
         return $this->render('movies/index.html.twig');
     }    
