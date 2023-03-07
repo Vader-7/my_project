@@ -17,7 +17,7 @@ class MovieFixtures extends Fixture
             "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
         );
         $movie->setImagePath(
-            "https://cdn.pixabay.com/photo/2015/11/28/10/52/binary-1066983__480.jpg"
+            "https://images.unsplash.com/photo-1641545423876-3d7dc842132c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3043&q=80"
         );
         $movie->addActor($this->getReference("actor"));
         $movie->addActor($this->getReference("actor1"));
